@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elegance Decor</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Tahoma', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 24px;
+      color: #d4af37; /* ذهبي */
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #d4af37;
+    }
+    .hero {
+      background: url('image/decor1.jpg') center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 48px;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    section {
+      padding: 60px 40px;
+    }
+    .services {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      flex-wrap: wrap;
+    }
+    .service {
+      width: 30%;
+      min-width: 250px;
+      background: #fff;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .service h3 {
+      color: #d4af37;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .contact form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .contact input, .contact textarea {
+      margin: 10px 0;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .contact button {
+      padding: 12px;
+      background: #d4af37;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .contact button:hover {
+      background: #b89329;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Elegance Decor</h1>
+    <nav>
+      <a href="#services">الخدمات</a>
+      <a href="#gallery">المعرض</a>
+      <a href="#contact">اتصل بنا</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2>نحو لمسة فخامة في كل ركن</h2>
+  </div>
+
+  <section id="services">
+    <h2>خدماتنا</h2>
+    <div class="services">
+      <div class="service">
+        <h3>تصميم داخلي</h3>
+        <p>نخلق مساحات عصرية مريحة تجمع بين الأناقة والوظيفة.</p>
+      </div>
+      <div class="service">
+        <h3>تنفيذ وتشطيب</h3>
+        <p>تشطيبات عالية الجودة باستخدام أحدث الخامات.</p>
+      </div>
+      <div class="service">
+        <h3>استشارات ديكور</h3>
+        <p>نوفر لك أفكار وحلول تناسب ذوقك وميزانيتك.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>معرض الصور</h2>
+    <div class="gallery">
+      <img src="image/decor2.jpg" alt="ديكور 1">
+      <img src="image/decor3.jpg" alt="ديكور 2">
+      <img src="image/decor4.jpg" alt="ديكور 3">
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>اتصل بنا</h2>
+    <form>
+      <input type="text" placeholder="الاسم">
+      <input type="email" placeholder="البريد الإلكتروني">
+      <textarea placeholder="رسالتك"></textarea>
+      <button type="submit">إرسال</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 جميع الحقوق محفوظة - شركة ديكور فخم</p>
+  </footer>
+
+</body>
+</html>
